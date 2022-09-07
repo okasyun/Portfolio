@@ -21,9 +21,11 @@ body {
 }
 
 .area {
+  overflow: hidden;
   background: black;
   background: -webkit-linear-gradient(to left, #29292b, black);
   width: 100%;
+  padding-top: 64px;
   height: 100vh;
   position: relative;
 }
