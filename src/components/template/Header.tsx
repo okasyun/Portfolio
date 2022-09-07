@@ -28,6 +28,7 @@ const Header: FC = memo(() => {
 
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const [activeEl, setActiveEl] = React.useState<boolean | HTMLElement>(false);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
@@ -53,6 +54,8 @@ const Header: FC = memo(() => {
                 color="inherit"
                 onClick={() => {
                   navigate(route.path);
+                  setActiveEl(true);
+                  console.log(activeEl);
                 }}
               >
                 {route.label}

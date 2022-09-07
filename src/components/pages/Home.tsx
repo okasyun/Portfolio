@@ -4,14 +4,15 @@ import "../../assets/home.css";
 
 const Home: FC = memo(() => {
   return (
-    <div className="title-container">
+    <>
       {/* title-containerが横幅いっぱいにならない */}
+      <Header />
       <div className="area">
-        <Header />
-        <h1 className="title">
-          This is <br />
-          Shun Okamoto's Portofilio
-        </h1>
+        <div className="home__container container">
+          <h5>Hello I'm</h5>
+          <h1>Shun Okamoto</h1>
+          <h5>Frontend Engineer</h5>
+        </div>
         <ul className="circles">
           <li></li>
           <li></li>
@@ -25,7 +26,7 @@ const Home: FC = memo(() => {
           <li></li>
         </ul>
       </div>
-    </div>
+    </>
   );
 });
 
