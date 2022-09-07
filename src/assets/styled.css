@@ -12,16 +12,22 @@ body {
   background-color: black;
 }
 
+.container__top {
+  height: 100vh;
+  padding-top: 64px;
+  height: 100vh;
+  background-color: black;
+  text-align: center;
+}
+
 .container {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
-  background-color: black;
+  height: 100%;
   width: 100%;
-  padding-top: 64px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 .cards {
@@ -72,4 +78,16 @@ body {
     font-size: 20px;
     line-height: 30px;
   }
+}
+.il {
+  margin-left: 3px;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+}
+
+.icons {
+  flex-direction: column;
+  display: flex;
+  gap: 0.2rem;
+  margin-bottom: 25px;
 }/*# sourceMappingURL=styled.css.map */

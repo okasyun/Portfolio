@@ -9,9 +9,9 @@ const Home: FC = memo(() => {
       <Header />
       <div className="area">
         <div className="home__container">
-          <h5>Hello I'm</h5>
+          <h3>Hello I'm</h3>
           <h1>Shun Okamoto</h1>
-          <h5>Frontend Engineer</h5>
+          <h3>Frontend Engineer</h3>
         </div>
         <ul className="circles">
           <li></li>
