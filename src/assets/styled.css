@@ -1,27 +1,32 @@
 body {
-  overflow: hidden;
   color: white;
 }
 
 .container {
+  justify-content: center;
   height: 100vh;
   background-color: black;
   width: 100%;
   padding-top: 64px;
   margin: 0 auto;
   text-align: center;
-  display: flex;
-  justify-content: center;
 }
 
-.home__container {
-  flex-direction: column;
+.cards {
+  gap: 4rem;
+  position: relative;
+  height: 80%;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .me {
-  margin-top: 3rem;
-  width: 22rem;
-  height: 22rem;
+  width: 20rem;
+  height: 20rem;
   position: relative;
 }
 .me > img {
@@ -35,4 +40,33 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.introduction {
+  width: 30rem;
+  position: relative;
+}
+.introduction > p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.container {
+  height: 100vh;
+  background-color: black;
+  width: 100%;
+  padding-top: 64px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .cards {
+    flex-direction: column;
+  }
+  .introduction > p {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }/*# sourceMappingURL=styled.css.map */
