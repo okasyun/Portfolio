@@ -8,13 +8,10 @@ body {
 }
 
 .home__container {
-  height: 100vh;
-  padding-top: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: black;
 }
 
 .title {
@@ -23,12 +20,9 @@ body {
 
 .container {
   height: 100vh;
-  background-color: black;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 64px;
   width: 100%;
+  padding-top: 64px;
+  background-color: black;
   margin: 0 auto;
   text-align: left;
 }
@@ -73,16 +67,6 @@ body {
   margin-bottom: 25px;
 }
 
-@media screen and (max-width: 1000px) {
-  .cards {
-    gap: 2rem;
-    flex-direction: column;
-  }
-  .introduction > p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
 .il {
   margin-left: 3px;
   display: inline-block;
@@ -94,4 +78,15 @@ body {
   display: flex;
   gap: 0.2rem;
   margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  .cards {
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .introduction > p {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }/*# sourceMappingURL=styled.css.map */

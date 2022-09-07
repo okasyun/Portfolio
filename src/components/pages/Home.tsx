@@ -8,7 +8,7 @@ const Home: FC = memo(() => {
       {/* title-containerが横幅いっぱいにならない */}
       <Header />
       <div className="area">
-        <div className="home__container">
+        <div className="home__container container">
           <h3>Hello I'm</h3>
           <h1>Shun Okamoto</h1>
           <h3>Frontend Engineer</h3>

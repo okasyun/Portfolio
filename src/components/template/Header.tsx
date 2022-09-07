@@ -54,8 +54,6 @@ const Header: FC = memo(() => {
                 color="inherit"
                 onClick={() => {
                   navigate(route.path);
-                  setActiveEl(true);
-                  console.log(activeEl);
                 }}
               >
                 {route.label}
