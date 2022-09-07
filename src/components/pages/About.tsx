@@ -12,39 +12,37 @@ const About: FC = memo(() => {
   return (
     <>
       <Header />
-      <div className="container__top">
-        <h1>About Me</h1>
-        <div className="container">
-          <div className="cards">
-            <div className="me">
-              <img src={me} alt="me" />
-            </div>
-            <div className="introduction">
-              <p>
-                I am a web engineer. My specialty is front-end development and
-                coding. This portfolio site lists my skills, my background, and
-                my productions.
-              </p>
-              <div className="icons">
-                <div className="">
-                  <FiMapPin />
-                  <p className="il">Tokyo</p>
-                </div>
-                <div>
-                  <AiOutlineMail />
-                  <p className="il">shunshun1207shun@gmail.com</p>
-                </div>
-                <div>
-                  <AiFillGithub />
-                  <a href="https://github.com/okasyun" className="il">
-                    okasyun
-                  </a>
-                </div>
+      <div className="container">
+        <h1 className="title">About Me</h1>
+        <div className="cards">
+          <div className="me">
+            <img src={me} alt="me" />
+          </div>
+          <div className="introduction">
+            <p>
+              I am a web engineer. My specialty is front-end development and
+              coding. This portfolio site lists my skills, my background, and my
+              productions.
+            </p>
+            <div className="icons">
+              <div>
+                <FiMapPin />
+                <p className="il">Tokyo</p>
               </div>
-              <Button size="large" variant="contained">
-                Let's talk
-              </Button>
+              <div>
+                <AiOutlineMail />
+                <p className="il">okasyun0326@gmail.com</p>
+              </div>
+              <div>
+                <AiFillGithub />
+                <a href="https://github.com/okasyun" className="il">
+                  okasyun
+                </a>
+              </div>
             </div>
+            <Button size="large" variant="contained">
+              Let's talk
+            </Button>
           </div>
         </div>
       </div>

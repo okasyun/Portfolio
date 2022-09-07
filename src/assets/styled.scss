@@ -1,3 +1,8 @@
+* {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   color: white;
 }
@@ -12,18 +17,17 @@ body {
   background-color: black;
 }
 
-.container__top {
-  height: 100vh;
-  padding-top: 64px;
-  height: 100vh;
-  background-color: black;
+.title {
   text-align: center;
 }
+
 .container {
+  height: 100vh;
+  background-color: black;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  padding-top: 64px;
   width: 100%;
   margin: 0 auto;
   text-align: left;
@@ -70,6 +74,7 @@ body {
 @media screen and (max-width: 1000px) {
   .cards {
     // width: 60%;
+    gap: 2rem;
     flex-direction: column;
   }
   .introduction > p {
