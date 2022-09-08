@@ -7,7 +7,6 @@ import { AiOutlineMail } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 
 import me from "../../assets/img/me.jpeg";
-
 const About: FC = memo(() => {
   const navigate = useNavigate();
   return (
