@@ -1,6 +1,5 @@
 import React, { FC, memo } from "react";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
@@ -10,38 +9,19 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+import Divider from "@mui/material/Divider";
+import Box from "@mui/material/Box";
 import { AiOutlineMail } from "react-icons/ai";
-
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { purple } from "@mui/material/colors";
 
 type Props = {
   image: string;
   title: string;
-  description: string;
+  cardDescription: string;
+  dialogDescription: string;
 };
 
-const theme = createTheme({
-  typography: {
-    fontFamily: [
-      "Exo",
-      "sans - serif",
-      "Noto Sans JP",
-      // 使用したいフォントを以降に羅列してください
-    ].join(","), // フォント
-    h5: {
-      fontWeight: 500,
-    },
-  },
-  palette: {
-    primary: {
-      main: purple[100],
-    },
-  },
-});
-
 const WorksCard: FC<Props> = memo((props: Props) => {
-  const { image, title, description } = props;
+  const { image, title, cardDescription, dialogDescription } = props;
   const [open, setOpen] = React.useState<boolean>(false);
 
   const handleClickOpen = () => {
@@ -55,48 +35,30 @@ const WorksCard: FC<Props> = memo((props: Props) => {
   return (
     <>
       <Card
-        sx={{ width: 300, maxHeight: 400, cursor: "pointer" }}
+        sx={{ width: 350, maxHeight: 400, cursor: "pointer", boxShadow: 5 }}
         onClick={handleClickOpen}
       >
-        <CardMedia
-          component="img"
-          height="180"
-          image={image}
-          alt="green iguana"
-        />
+        <CardMedia component="img" height="200" image={image} alt="" />
         <CardContent>
-          <ThemeProvider theme={theme}>
-            <Typography gutterBottom variant="h5" component="div">
-              {title}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {description}
-            </Typography>
-          </ThemeProvider>
+          <Typography gutterBottom variant="h5" component="div">
+            {title}
+          </Typography>
+          <Divider sx={{ bgcolor: "text.secondary", mb: 1 }} />
+          <Typography variant="body2" color="text.secondary">
+            {cardDescription}
+          </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small" variant="contained" color="secondary">
-            ソースコード
-          </Button>
-          <Button size="small" variant="contained">
-            デモサイト
-          </Button>
-        </CardActions>
       </Card>
-      <Dialog
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
-      >
-        <DialogTitle id="alert-dialog-title">
-          {"Use Google's location service?"}
-        </DialogTitle>
+      <Dialog open={open} onClose={handleClose} fullScreen>
+        <DialogTitle>{title}</DialogTitle>
+        <Divider sx={{ bgcolor: "text.secondary", mb: 1 }} />
         <DialogContent>
-          <DialogContentText id="alert-dialog-description">
-            Let Google help apps determine location. This means sending
-            anonymous location data to Google, even when no apps are running.
-          </DialogContentText>
+          <Box
+            component="img"
+            src={image}
+            sx={{ height: "400px", objectFit: "cover" }}
+          ></Box>
+          <DialogContentText>{dialogDescription}</DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button

@@ -1,8 +1,8 @@
-import React, { memo, FC } from "react";
+import React, { FC } from "react";
 import Header from "../template/Header";
 import "../../assets/home.css";
 
-const Home: FC = memo(() => {
+const Home: FC = () => {
   return (
     <>
       {/* title-containerが横幅いっぱいにならない */}
@@ -28,6 +28,6 @@ const Home: FC = memo(() => {
       </div>
     </>
   );
-});
+};
 
 export default Home;

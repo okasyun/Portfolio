@@ -1,10 +1,11 @@
 * {
   text-decoration: none;
+  font-family: "Exo", "Noto Sans JP", sans-serif !important;
   color: inherit;
 }
 
 body {
-  color: white;
+  color: black;
 }
 
 .home__container {
@@ -44,6 +45,7 @@ body {
   height: 22rem;
   position: relative;
   & > img {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 3rem;
     top: 0;
     left: 0;
@@ -70,11 +72,17 @@ body {
   display: inline-block;
   letter-spacing: 0.2rem;
 }
-.icons {
+.icons__list {
   flex-direction: column;
   display: flex;
   gap: 0.2rem;
   margin-bottom: 25px;
+}
+.icon {
+  transition: all 400ms ease;
+  &:hover {
+    color: rgba(0, 0, 0, 0.2);
+  }
 }
 
 @media screen and (max-width: 1000px) {

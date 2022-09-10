@@ -9,7 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { styled } from "@mui/material/styles";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { homeRoutes } from "../../router/HomeRoutes";
 
@@ -41,7 +41,7 @@ const Header: FC = memo(() => {
         <AppBar position="fixed" color="default">
           <Toolbar>
             <Typography variant="h6" component="div">
-              Portfolio
+              <Link to={homeRoutes[0].path}>Shun Okamoto</Link>
             </Typography>
             <div style={{ flexGrow: 1 }}></div>
             {homeRoutes.map((route) => (

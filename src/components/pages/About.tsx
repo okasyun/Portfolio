@@ -1,5 +1,7 @@
 import React, { memo, FC } from "react";
 import Header from "../template/Header";
+import Typography from "@mui/material/Typography";
+import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
 import { FiMapPin } from "react-icons/fi";
@@ -12,8 +14,10 @@ const About: FC = memo(() => {
   return (
     <>
       <Header />
-      <div className="container">
-        <h1 className="title">About Me</h1>
+      <Container>
+        <Typography mt={3} variant="h4" align="center">
+          About Me
+        </Typography>
         <div className="cards">
           <div className="me">
             <img src={me} alt="me" />
@@ -24,18 +28,18 @@ const About: FC = memo(() => {
               coding. This portfolio site lists my skills, my background, and my
               productions.
             </p>
-            <div className="icons">
+            <div className="icons__list">
               <div>
                 <FiMapPin />
                 <p className="il">Tokyo</p>
               </div>
-              <div>
+              <div className="icon">
                 <a href="mailto:okashun0326@gmail.com">
                   <AiOutlineMail />
                   <span className="il">okasyun0326@gmail.com</span>
                 </a>
               </div>
-              <div>
+              <div className="icon">
                 <a href="https://github.com/okasyun">
                   <AiFillGithub />
                   <span className="il">okasyun</span>
@@ -51,9 +55,18 @@ const About: FC = memo(() => {
             </Button>
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 });
+
+const Container = styled.div`
+  height: 100vh;
+  width: 100%;
+  padding-top: 64px;
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+`;
 
 export default About;

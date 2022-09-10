@@ -1,6 +1,7 @@
 import React, { memo, FC } from "react";
 import Header from "../template/Header";
 import styled from "styled-components";
+import Typography from "@mui/material/Typography";
 import WorksCard from "../organism/WorksCard";
 
 import me from "../../assets/img/me.jpeg";
@@ -11,54 +12,72 @@ import photoportfolio from "../../assets/img/photoportfolio.png";
 // フォント
 // 使用した言語
 // クリックした時の作品説明
-// 画像変更
 // ボタンのデザイン
+// cardhover時のアクション
+// gridcomponentで実装
+// box imgcomponent
+
+const works = [
+  {
+    id: 0,
+    image: ecsite,
+    title: "ECサイト",
+    cardDescription: "ファッションのECサイトを作りました",
+    dialogDescription:
+      "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
+  },
+  {
+    id: 1,
+    image: pyxel,
+    title: "ブロック崩しゲーム",
+    cardDescription: "ファッションのECサイトを作りました",
+    dialogDescription:
+      "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
+  },
+  {
+    id: 2,
+    image: nobutyping,
+    title: "ノブのタイピングゲーム",
+    cardDescription: "ファッションのECサイトを作りました",
+    dialogDescription:
+      "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
+  },
+  {
+    id: 3,
+    image: photoportfolio,
+    title: "写真のポートフォリオ",
+    cardDescription: "ファッションのECサイトを作りました",
+    dialogDescription:
+      "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
+  },
+  {
+    id: 4,
+    image: me,
+    title: "ポートフォリオ",
+    cardDescription: "ファッションのECサイトを作りました",
+    dialogDescription:
+      "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
+  },
+];
+
 const Works: FC = memo(() => {
-  const works = [
-    {
-      id: 0,
-      image: ecsite,
-      title: "ECサイト",
-      description: "ファッションのECサイトを作りました",
-    },
-    {
-      id: 1,
-      image: pyxel,
-      title: "ブロック崩しゲーム",
-      description: "Pythonでブロック崩しを作りました",
-    },
-    {
-      id: 2,
-      image: nobutyping,
-      title: "ノブのタイピングゲーム",
-      description: "ノブのツッコミ集でタイピング練習ができます",
-    },
-    {
-      id: 3,
-      image: photoportfolio,
-      title: "写真のポートフォリオ",
-      description: "自分が撮った写真のポートフォリオです。",
-    },
-    {
-      id: 4,
-      image: me,
-      title: "ポートフォリオ",
-      description: "このWebサイトです。Reactで作りました。",
-    },
-  ];
   return (
     <>
       <Header />
 
       <Container>
-        <h1 className="title">Works</h1>
+        {/* <h1 className="title">Works</h1> */}
+        <Typography mt={3} variant="h4" align="center">
+          Works
+        </Typography>
         <WorksList>
           {works.map((work) => (
             <WorksCard
               key={work.id}
               image={work.image}
               title={work.title}
-              description={work.description}
+              cardDescription={work.cardDescription}
+              dialogDescription={work.dialogDescription}
             ></WorksCard>
           ))}
         </WorksList>
@@ -68,9 +87,11 @@ const Works: FC = memo(() => {
 });
 
 const Container = styled.div`
+  height: auto;
+  position: relative;
   width: 100%;
   padding-top: 64px;
-  background-color: rgb(35, 35, 39);
+  background-color: white;
 `;
 
 const WorksList = styled.div`
@@ -79,6 +100,7 @@ const WorksList = styled.div`
   padding-bottom: 30px;
   gap: 40px;
   width: 95%;
+  height: 100%;
   justify-content: center;
   display: flex;
   flex-flow: wrap;
