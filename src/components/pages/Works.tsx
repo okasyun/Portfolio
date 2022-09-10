@@ -67,7 +67,7 @@ const Works: FC = memo(() => {
 
       <Container>
         {/* <h1 className="title">Works</h1> */}
-        <Typography mt={3} variant="h4" align="center">
+        <Typography my={3} variant="h4" align="center">
           Works
         </Typography>
         <WorksList>
@@ -96,10 +96,8 @@ const Container = styled.div`
 
 const WorksList = styled.div`
   margin: 0 auto;
-  padding-top: 30px;
   padding-bottom: 30px;
   gap: 40px;
-  width: 95%;
   height: 100%;
   justify-content: center;
   display: flex;

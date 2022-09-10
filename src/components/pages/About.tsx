@@ -15,7 +15,7 @@ const About: FC = memo(() => {
     <>
       <Header />
       <Container>
-        <Typography mt={3} variant="h4" align="center">
+        <Typography my={3} variant="h4" align="center">
           About Me
         </Typography>
         <div className="cards">

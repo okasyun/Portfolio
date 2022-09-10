@@ -56,7 +56,7 @@ const WorksCard: FC<Props> = memo((props: Props) => {
           <Box
             component="img"
             src={image}
-            sx={{ height: "400px", objectFit: "cover" }}
+            sx={{ maxWidth: "100%", height: "400px", objectFit: "cover" }}
           ></Box>
           <DialogContentText>{dialogDescription}</DialogContentText>
         </DialogContent>
