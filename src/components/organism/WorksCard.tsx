@@ -12,6 +12,8 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
 import { AiOutlineMail } from "react-icons/ai";
+// import { styled } from "@mui/system";
+import styled from "styled-components";
 
 type Props = {
   image: string;
@@ -35,12 +37,20 @@ const WorksCard: FC<Props> = memo((props: Props) => {
   return (
     <>
       <Card
-        sx={{ width: 350, maxHeight: 400, cursor: "pointer", boxShadow: 5 }}
+        sx={{
+          "@media (max-width: 900px)": {
+            width: "100%",
+          },
+          width: 400,
+          maxHeight: 600,
+          cursor: "pointer",
+          boxShadow: 5,
+        }}
         onClick={handleClickOpen}
       >
         <CardMedia component="img" height="200" image={image} alt="" />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5">
             {title}
           </Typography>
           <Divider sx={{ bgcolor: "text.secondary", mb: 1 }} />

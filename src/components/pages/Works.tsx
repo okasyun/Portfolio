@@ -1,8 +1,8 @@
 import React, { memo, FC } from "react";
 import Header from "../template/Header";
 import styled from "styled-components";
-import Typography from "@mui/material/Typography";
 import WorksCard from "../organism/WorksCard";
+import { Typography } from "@mui/material";
 
 import me from "../../assets/img/me.jpeg";
 import ecsite from "../../assets/img/ecsite.png";
@@ -14,8 +14,6 @@ import photoportfolio from "../../assets/img/photoportfolio.png";
 // クリックした時の作品説明
 // ボタンのデザイン
 // cardhover時のアクション
-// gridcomponentで実装
-// box imgcomponent
 
 const works = [
   {
@@ -59,14 +57,12 @@ const works = [
       "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
   },
 ];
-
 const Works: FC = memo(() => {
   return (
     <>
       <Header />
 
       <Container>
-        {/* <h1 className="title">Works</h1> */}
         <Typography my={3} variant="h4" align="center">
           Works
         </Typography>
@@ -87,7 +83,6 @@ const Works: FC = memo(() => {
 });
 
 const Container = styled.div`
-  height: auto;
   position: relative;
   width: 100%;
   padding-top: 64px;
@@ -96,10 +91,13 @@ const Container = styled.div`
 
 const WorksList = styled.div`
   margin: 0 auto;
+  padding-top: 30px;
   padding-bottom: 30px;
   gap: 40px;
-  height: 100%;
+  width: 95%;
+
   justify-content: center;
+  align-items: center;
   display: flex;
   flex-flow: wrap;
 `;
