@@ -15,8 +15,6 @@ import { AiOutlineMail } from "react-icons/ai";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 
-import styled from "styled-components";
-
 type Props = {
   image: string;
   title: string;
