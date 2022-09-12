@@ -14,8 +14,6 @@ import Box from "@mui/material/Box";
 import { AiOutlineMail } from "react-icons/ai";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
-import { DiJavascript1 } from "react-icons/di";
-import { StringMappingType } from "typescript";
 
 type Props = {
   image: string;
