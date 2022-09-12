@@ -4,64 +4,17 @@ import styled from "styled-components";
 import WorksCard from "../organism/WorksCard";
 import { Typography } from "@mui/material";
 
-import me from "../../assets/img/me.jpeg";
-import ecsite from "../../assets/img/ecsite.png";
-import pyxel from "../../assets/img/pyxel.png";
-import nobutyping from "../../assets/img/nobutyping.png";
-import photoportfolio from "../../assets/img/photoportfolio.png";
+import { works } from "../../works";
 // フォント
 // 使用した言語
 // クリックした時の作品説明
 // ボタンのデザイン
 // cardhover時のアクション
 
-const works = [
-  {
-    id: 0,
-    image: ecsite,
-    title: "ECサイト",
-    cardDescription: "ファッションのECサイトを作りました",
-    dialogDescription:
-      "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
-  },
-  {
-    id: 1,
-    image: pyxel,
-    title: "ブロック崩しゲーム",
-    cardDescription: "ファッションのECサイトを作りました",
-    dialogDescription:
-      "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
-  },
-  {
-    id: 2,
-    image: nobutyping,
-    title: "ノブのタイピングゲーム",
-    cardDescription: "ファッションのECサイトを作りました",
-    dialogDescription:
-      "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
-  },
-  {
-    id: 3,
-    image: photoportfolio,
-    title: "写真のポートフォリオ",
-    cardDescription: "ファッションのECサイトを作りました",
-    dialogDescription:
-      "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
-  },
-  {
-    id: 4,
-    image: me,
-    title: "ポートフォリオ",
-    cardDescription: "ファッションのECサイトを作りました",
-    dialogDescription:
-      "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
-  },
-];
 const Works: FC = memo(() => {
   return (
     <>
       <Header />
-
       <Container>
         <Typography my={3} variant="h4" align="center">
           Works
@@ -74,6 +27,8 @@ const Works: FC = memo(() => {
               title={work.title}
               cardDescription={work.cardDescription}
               dialogDescription={work.dialogDescription}
+              tools={work.tools}
+              link={work.link}
             ></WorksCard>
           ))}
         </WorksList>
@@ -83,7 +38,6 @@ const Works: FC = memo(() => {
 });
 
 const Container = styled.div`
-  position: relative;
   width: 100%;
   padding-top: 64px;
   background-color: white;

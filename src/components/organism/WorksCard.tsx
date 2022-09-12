@@ -12,18 +12,26 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
 import { AiOutlineMail } from "react-icons/ai";
-// import { styled } from "@mui/system";
-import styled from "styled-components";
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
+import { DiJavascript1 } from "react-icons/di";
+import { StringMappingType } from "typescript";
 
 type Props = {
   image: string;
   title: string;
   cardDescription: string;
   dialogDescription: string;
+  tools: string[];
+  link: {
+    sourceCode: string;
+    demoSite: string;
+  };
 };
 
 const WorksCard: FC<Props> = memo((props: Props) => {
-  const { image, title, cardDescription, dialogDescription } = props;
+  const { image, title, cardDescription, dialogDescription, tools, link } =
+    props;
   const [open, setOpen] = React.useState<boolean>(false);
 
   const handleClickOpen = () => {
@@ -38,13 +46,14 @@ const WorksCard: FC<Props> = memo((props: Props) => {
     <>
       <Card
         sx={{
-          "@media (max-width: 900px)": {
+          "@media screen and (max-width:900px)": {
             width: "100%",
           },
+          maxHeight: 500,
           width: 400,
-          maxHeight: 600,
           cursor: "pointer",
           boxShadow: 5,
+          borderRadius: "20px",
         }}
         onClick={handleClickOpen}
       >
@@ -59,7 +68,7 @@ const WorksCard: FC<Props> = memo((props: Props) => {
           </Typography>
         </CardContent>
       </Card>
-      <Dialog open={open} onClose={handleClose} fullScreen>
+      <Dialog open={open} onClose={handleClose}>
         <DialogTitle>{title}</DialogTitle>
         <Divider sx={{ bgcolor: "text.secondary", mb: 1 }} />
         <DialogContent>
@@ -69,16 +78,27 @@ const WorksCard: FC<Props> = memo((props: Props) => {
             sx={{ maxWidth: "100%", height: "400px", objectFit: "cover" }}
           ></Box>
           <DialogContentText>{dialogDescription}</DialogContentText>
+          <Stack direction="row" spacing={1} mt={2}>
+            {tools.map((tool) => (
+              <Chip label={tool}></Chip>
+            ))}
+          </Stack>
         </DialogContent>
         <DialogActions>
           <Button
+            href={link.sourceCode}
             onClick={handleClose}
             startIcon={<AiOutlineMail />}
             variant="contained"
           >
             ソースコード
           </Button>
-          <Button onClick={handleClose} autoFocus variant="contained">
+          <Button
+            href={link.demoSite}
+            onClick={handleClose}
+            autoFocus
+            variant="contained"
+          >
             デモサイト
           </Button>
         </DialogActions>
