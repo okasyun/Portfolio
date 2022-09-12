@@ -33,7 +33,7 @@ export const works = [
     title: "ブロック崩しゲーム",
     cardDescription: "ファッションのECサイトを作りました",
     dialogDescription:
-      "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
+      "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しましたYoutubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しましたYoutubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しましたYoutubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しましたYoutubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
     tools: ["Python"],
     link: {
       sourceCode: "https://github.com/okasyun/break_ball",

@@ -15,6 +15,8 @@ import { AiOutlineMail } from "react-icons/ai";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 
+import styled from "styled-components";
+
 type Props = {
   image: string;
   title: string;
@@ -45,7 +47,7 @@ const WorksCard: FC<Props> = memo((props: Props) => {
       <Card
         sx={{
           "@media screen and (max-width:900px)": {
-            width: "100%",
+            width: "90%",
           },
           maxHeight: 500,
           width: 400,
@@ -66,8 +68,16 @@ const WorksCard: FC<Props> = memo((props: Props) => {
           </Typography>
         </CardContent>
       </Card>
-      <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>{title}</DialogTitle>
+      <Dialog open={open} onClose={handleClose} maxWidth={"lg"}>
+        <DialogTitle
+          sx={{
+            "@media screen and (max-width:900px)": {
+              textAlign: "center",
+            },
+          }}
+        >
+          {title}
+        </DialogTitle>
         <Divider sx={{ bgcolor: "text.secondary", mb: 1 }} />
         <DialogContent>
           <Box
@@ -75,10 +85,12 @@ const WorksCard: FC<Props> = memo((props: Props) => {
             src={image}
             sx={{ maxWidth: "100%", height: "400px", objectFit: "cover" }}
           ></Box>
-          <DialogContentText>{dialogDescription}</DialogContentText>
-          <Stack direction="row" spacing={1} mt={2}>
+          <DialogContentText mt={2} lineHeight={1.5}>
+            {dialogDescription}
+          </DialogContentText>
+          <Stack direction="row" flexWrap={"wrap"} gap={"10px"} mt={2}>
             {tools.map((tool) => (
-              <Chip label={tool}></Chip>
+              <Chip label={tool} sx={{ margin: 0 }}></Chip>
             ))}
           </Stack>
         </DialogContent>
