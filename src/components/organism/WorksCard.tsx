@@ -81,11 +81,12 @@ const WorksCard: FC<Props> = memo((props: Props) => {
           <Box
             component="img"
             src={image}
-            sx={{ maxWidth: "100%", height: "400px", objectFit: "cover" }}
+            sx={{ maxWidth: "100%", maxHeight: "350px", objectFit: "cover" }}
           ></Box>
           <DialogContentText mt={2} lineHeight={1.5}>
             {dialogDescription}
           </DialogContentText>
+
           <Stack direction="row" flexWrap={"wrap"} gap={"10px"} mt={2}>
             {tools.map((tool) => (
               <Chip label={tool} sx={{ margin: 0 }}></Chip>
