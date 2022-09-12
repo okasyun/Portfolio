@@ -11,9 +11,11 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
-import { AiOutlineMail } from "react-icons/ai";
+
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import WebAssetIcon from "@mui/icons-material/WebAsset";
 
 type Props = {
   image: string;
@@ -87,7 +89,7 @@ const WorksCard: FC<Props> = memo((props: Props) => {
             {dialogDescription}
           </DialogContentText>
 
-          <Stack direction="row" flexWrap={"wrap"} gap={"10px"} mt={2}>
+          <Stack direction="row" flexWrap={"wrap"} gap={"7px"} mt={2}>
             {tools.map((tool) => (
               <Chip label={tool} sx={{ margin: 0 }}></Chip>
             ))}
@@ -97,7 +99,7 @@ const WorksCard: FC<Props> = memo((props: Props) => {
           <Button
             href={link.sourceCode}
             onClick={handleClose}
-            startIcon={<AiOutlineMail />}
+            startIcon={<GitHubIcon />}
             variant="contained"
           >
             ソースコード
@@ -105,7 +107,7 @@ const WorksCard: FC<Props> = memo((props: Props) => {
           <Button
             href={link.demoSite}
             onClick={handleClose}
-            autoFocus
+            startIcon={<WebAssetIcon />}
             variant="contained"
           >
             デモサイト
