@@ -24,6 +24,7 @@ type Props = {
   dialogDescription: string;
   tools: string[];
   link: {
+    demoBoolean: boolean;
     sourceCode: string;
     demoSite: string;
   };
@@ -106,14 +107,16 @@ const WorksCard: FC<Props> = memo((props: Props) => {
           >
             ソースコード
           </Button>
-          <Button
-            href={link.demoSite}
-            onClick={handleClose}
-            startIcon={<WebAssetIcon />}
-            variant="contained"
-          >
-            デモサイト
-          </Button>
+          {link.demoBoolean && (
+            <Button
+              href={link.demoSite}
+              onClick={handleClose}
+              startIcon={<WebAssetIcon />}
+              variant="contained"
+            >
+              デモサイト
+            </Button>
+          )}
         </DialogActions>
       </Dialog>
     </>

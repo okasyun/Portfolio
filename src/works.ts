@@ -23,6 +23,7 @@ export const works = [
       "MUI",
     ],
     link: {
+      demoBoolean: true,
       sourceCode: "https://github.com/okasyun/ecApp",
       demoSite: "https://test2-ec-app.web.app/",
     },
@@ -36,6 +37,7 @@ export const works = [
       "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しましたYoutubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しましたYoutubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しましたYoutubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しましたYoutubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
     tools: ["Python"],
     link: {
+      demoBoolean: false,
       sourceCode: "https://github.com/okasyun/break_ball",
       demoSite: "https://test2-ec-app.web.app/",
     },
@@ -49,6 +51,7 @@ export const works = [
       "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
     tools: ["HTML&CSS", "Javascript"],
     link: {
+      demoBoolean: true,
       sourceCode: "https://github.com/okasyun/Nobu-Typing",
       demoSite: "https://nobu-typing.netlify.app",
     },
@@ -62,6 +65,7 @@ export const works = [
       "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
     tools: ["HTML&CSS", "JavaScript", "Jquery"],
     link: {
+      demoBoolean: true,
       sourceCode: "https://github.com/okasyun/photoPortofolio",
       demoSite: "https://shun-okamoto.netlify.app",
     },
@@ -75,6 +79,7 @@ export const works = [
       "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
     tools: ["HTML&CSS", "Typescript", "React", "MUI"],
     link: {
+      demoBoolean: true,
       sourceCode: "https://github.com/okasyun/Portfolio",
       demoSite: "https://okasyun.netlify.app",
     },
