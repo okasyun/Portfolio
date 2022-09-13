@@ -7,6 +7,11 @@ import { theme } from "./theme-option";
 import "./assets/reset.css";
 import "./assets/styled.css";
 
+// フォント
+// ボタンのデザイン
+// cardhover時のアクション
+// memo化によるパフォーマンス
+// netlifyurlエラー
 function App() {
   return (
     <>

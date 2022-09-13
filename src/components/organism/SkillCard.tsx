@@ -67,7 +67,11 @@ const StyledSkill = styled.div`
 
 const StyledItem = styled.div`
   text-align: center;
-  width: calc(50% - 20px);
+  width: calc(33.3333% - 20px);
+  @media screen and (max-width: 900px) {
+    width: calc(50% - 20px);
+  }
+
   margin: 10px;
 `;
 export default SkillCard;

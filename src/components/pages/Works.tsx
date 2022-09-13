@@ -5,11 +5,6 @@ import WorksCard from "../organism/WorksCard";
 import { Typography } from "@mui/material";
 
 import { works } from "../../data";
-// フォント
-// 使用した言語
-// クリックした時の作品説明
-// ボタンのデザイン
-// cardhover時のアクション
 
 const Works: FC = memo(() => {
   return (

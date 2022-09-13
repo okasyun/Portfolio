@@ -172,13 +172,13 @@ export const skills = [
       {
         name: "Git",
         image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
         rating: 3,
       },
       {
         name: "Firebase",
         image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
         rating: 2,
       },
     ],
