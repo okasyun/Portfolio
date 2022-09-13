@@ -59,10 +59,10 @@ const WorksCard: FC<Props> = memo((props: Props) => {
       >
         <CardMedia component="img" height="200" image={image} alt="" />
         <CardContent>
-          <Typography gutterBottom variant="h5">
+          <Typography gutterBottom variant="h6" sx={{ fontWeight: "bold" }}>
             {title}
           </Typography>
-          <Divider sx={{ bgcolor: "text.secondary", mb: 1 }} />
+          <Divider sx={{ mb: 1 }} />
           <Typography variant="body2" color="text.secondary">
             {cardDescription}
           </Typography>
@@ -71,14 +71,16 @@ const WorksCard: FC<Props> = memo((props: Props) => {
       <Dialog open={open} onClose={handleClose} maxWidth={"lg"}>
         <DialogTitle
           sx={{
+            fontWeight: "bold",
             "@media screen and (max-width:900px)": {
               textAlign: "center",
             },
+            backgroundColor: "#f5f5f5",
           }}
         >
           {title}
         </DialogTitle>
-        <Divider sx={{ bgcolor: "text.secondary", mb: 1 }} />
+        <Divider sx={{}} />
         <DialogContent>
           <Box
             component="img"
@@ -89,7 +91,7 @@ const WorksCard: FC<Props> = memo((props: Props) => {
             {dialogDescription}
           </DialogContentText>
 
-          <Stack direction="row" flexWrap={"wrap"} gap={"7px"} mt={2}>
+          <Stack direction="row" flexWrap={"wrap"} gap={"8px"} mt={2}>
             {tools.map((tool) => (
               <Chip label={tool} sx={{ margin: 0 }}></Chip>
             ))}
