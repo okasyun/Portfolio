@@ -31,6 +31,7 @@ type Props = {
 };
 
 const WorksCard: FC<Props> = memo((props: Props) => {
+  console.log("レンダリングされました");
   const { image, title, cardDescription, dialogDescription, tools, link } =
     props;
   const [open, setOpen] = React.useState<boolean>(false);
@@ -94,7 +95,7 @@ const WorksCard: FC<Props> = memo((props: Props) => {
 
           <Stack direction="row" flexWrap={"wrap"} gap={"8px"} mt={2}>
             {tools.map((tool) => (
-              <Chip label={tool} sx={{ margin: 0 }}></Chip>
+              <Chip key={tool} label={tool} sx={{ margin: 0 }}></Chip>
             ))}
           </Stack>
         </DialogContent>

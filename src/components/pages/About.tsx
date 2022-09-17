@@ -36,7 +36,7 @@ const About: FC = memo(() => {
               <div className="icon">
                 <a href="mailto:okashun0326@gmail.com">
                   <AiOutlineMail />
-                  <span className="il">okasyun0326@gmail.com</span>
+                  <span className="il">okashun0326@gmail.com</span>
                 </a>
               </div>
               <div className="icon">

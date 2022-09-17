@@ -12,6 +12,7 @@ import "./assets/styled.css";
 // cardhover時のアクション
 // memo化によるパフォーマンス
 // netlifyurlエラー
+
 function App() {
   return (
     <>
