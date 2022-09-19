@@ -4,9 +4,9 @@ import pyxel from "./assets/img/pyxel.png";
 import nobutyping from "./assets/img/nobutyping.png";
 import photoportfolio from "./assets/img/photoportfolio.png";
 
-// import { DjJavascript1 } from "react-icons/di";
+import { Work, Skill } from "./type";
 
-export const works = [
+export const works: Work[] = [
   {
     id: 0,
     image: ecsite,
@@ -86,7 +86,7 @@ export const works = [
   },
 ];
 
-export const skills = [
+export const skills: Skill[] = [
   {
     id: 0,
     title: "Language",
@@ -95,13 +95,13 @@ export const skills = [
         name: "HTML",
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-        rating: 4,
+        rating: 5,
       },
       {
         name: "CSS",
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-        rating: 4,
+        rating: 5,
       },
       {
         name: "SASS",
@@ -131,6 +131,24 @@ export const skills = [
         name: "PHP",
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+        rating: 1,
+      },
+      {
+        name: "R",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg",
+        rating: 1,
+      },
+      {
+        name: "C",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+        rating: 1,
+      },
+      {
+        name: "Matlab",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg",
         rating: 1,
       },
     ],

@@ -36,8 +36,8 @@ const SkillCard: FC<Props> = (props: Props) => {
           </Typography>
         </Divider>
         <StyledSkill>
-          {items.map((item, index) => (
-            <StyledItem key={index}>
+          {items.map((item) => (
+            <StyledItem key={item.name}>
               <Typography variant="h6">{item.name}</Typography>
               <Box
                 component="img"

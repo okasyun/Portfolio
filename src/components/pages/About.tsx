@@ -24,10 +24,14 @@ const About: FC = memo(() => {
           </div>
           <div className="introduction">
             <p>
+              webエンジニア。特にフロントエンド開発が得意です。
+              このポートフォリオでは私のスキルと作品などを公開しています。
+            </p>
+            {/* <p>
               I am a web engineer. My specialty is front-end development and
               coding. This portfolio site lists my skills, my background, and my
               productions.
-            </p>
+            </p> */}
             <div className="icons__list">
               <div>
                 <FiMapPin />

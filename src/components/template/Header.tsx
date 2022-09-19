@@ -14,9 +14,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { homeRoutes } from "../../router/HomeRoutes";
 
 const Header: FC = memo(() => {
-  // styled方式でカスタマイズ
-  // themeを引数にしてデフォルトのthemeを使う
-
   const CustomButton = styled(Button)(({ theme }) => ({
     [theme.breakpoints.down("md")]: {
       display: "none",
