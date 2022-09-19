@@ -54,13 +54,13 @@ const About: FC = memo(() => {
                 </a>
               </div>
               <div className="icon">
-                <a href="https://github.com/okasyun">
+                <a href="https://twitter.com/takoyakimayonai">
                   <AiFillTwitterSquare />
                   <span className="il">Twitter</span>
                 </a>
               </div>
               <div className="icon">
-                <a href="https://github.com/okasyun">
+                <a href="https://qiita.com/gensokyo0326">
                   <AiOutlineLink />
                   <span className="il">Qiita</span>
                 </a>
