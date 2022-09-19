@@ -3,7 +3,6 @@ import Typography from "@mui/material/Typography";
 
 import "../../assets/home.css";
 import Header from "../template/Header";
-import Footer from "../template/Footer";
 
 const Home: FC = () => {
   return (
