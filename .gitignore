@@ -1,9 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 .env
-/setupTests.ts
-/reportWebVitals.ts
-/react-app-env.d.ts
+setupTests.ts
+reportWebVitals.ts
+react-app-env.d.ts
 
 
 
