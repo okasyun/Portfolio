@@ -1,8 +1,11 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# env除外
 .env
-react-app-env.d.ts
+/setupTests.ts
+/reportWebVitals.ts
+/react-app-env.d.ts
+
+
 
 # dependencies
 /node_modules
@@ -25,3 +28,4 @@ react-app-env.d.ts
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+node_modules
