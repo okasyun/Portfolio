@@ -1,13 +1,13 @@
 import React, { memo, FC } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
-
-import Header from "../template/Header";
-import { useForm, Controller, SubmitHandler } from "react-hook-form";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { Alert, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import { useForm, Controller, SubmitHandler } from "react-hook-form";
+
+import Header from "../template/Header";
 
 // 環境変数のセッティング
 // デザインの修正
@@ -64,7 +64,7 @@ const Contact: FC = memo(() => {
   };
 
   return (
-    <>
+    <Wrapper>
       <Header />
       <Container>
         <Typography my={3} variant="h4" align="center">
@@ -140,10 +140,14 @@ const Contact: FC = memo(() => {
           )}
         </Box>
       </Container>
-    </>
+    </Wrapper>
   );
 });
 
+const Wrapper = styled.div`
+  position: relative;
+  min-height: 100vh;
+`;
 const Container = styled.div`
   width: 100%;
   padding-top: 64px;

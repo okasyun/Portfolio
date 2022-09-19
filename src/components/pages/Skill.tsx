@@ -1,11 +1,11 @@
 import React, { FC } from "react";
-import Header from "../template/Header";
 import styled from "styled-components";
 import { Typography } from "@mui/material";
-
 import SkillCard from "../organism/SkillCard";
 import { skills } from "../../data";
 import { Box } from "@mui/system";
+
+import Header from "../template/Header";
 
 const Skill: FC = () => {
   return (

@@ -1,4 +1,5 @@
 import { Routes } from "../type";
+
 export const homeRoutes: Routes[] = [
   { id: 1, path: "/", label: "Home", active: true },
   { id: 2, path: "/about", label: "About", active: false },

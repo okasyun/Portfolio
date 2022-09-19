@@ -1,14 +1,14 @@
 import React, { memo, FC } from "react";
-import Header from "../template/Header";
 import styled from "styled-components";
 import WorksCard from "../organism/WorksCard";
 import { Typography } from "@mui/material";
 
+import Header from "../template/Header";
 import { works } from "../../data";
 
 const Works: FC = memo(() => {
   return (
-    <>
+    <Wrapper>
       <Header />
       <Container>
         <Typography my={3} variant="h4" align="center">
@@ -28,14 +28,18 @@ const Works: FC = memo(() => {
           ))}
         </WorksList>
       </Container>
-    </>
+    </Wrapper>
   );
 });
+
+const Wrapper = styled.div`
+  position: relative;
+  min-height: 100vh;
+`;
 
 const Container = styled.div`
   width: 100%;
   padding-top: 64px;
-  background-color: white;
 `;
 
 const WorksList = styled.div`

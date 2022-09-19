@@ -78,7 +78,7 @@ body {
 .icons__list {
   flex-direction: column;
   display: flex;
-  gap: 0.2rem;
+  gap: 0.5rem;
   margin-bottom: 25px;
 }
 

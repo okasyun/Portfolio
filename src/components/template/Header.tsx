@@ -10,9 +10,23 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { styled } from "@mui/material/styles";
 import { Link, useNavigate } from "react-router-dom";
+import HomeIcon from "@mui/icons-material/Home";
+import PersonIcon from "@mui/icons-material/Person";
+import BuildIcon from "@mui/icons-material/Build";
+import CodeIcon from "@mui/icons-material/Code";
+import EmailIcon from "@mui/icons-material/Email";
+import { ListItemText } from "@mui/material";
+import { ListItemIcon } from "@mui/material";
 
 import { homeRoutes } from "../../router/HomeRoutes";
 
+const iconList = [
+  <HomeIcon />,
+  <PersonIcon />,
+  <BuildIcon />,
+  <CodeIcon />,
+  <EmailIcon />,
+];
 const Header: FC = memo(() => {
   const CustomButton = styled(Button)(({ theme }) => ({
     [theme.breakpoints.down("md")]: {
@@ -80,7 +94,7 @@ const Header: FC = memo(() => {
                 "aria-labelledby": "basic-button",
               }}
             >
-              {homeRoutes.map((route) => (
+              {homeRoutes.map((route, index) => (
                 <MenuItem
                   onClick={() => {
                     handleClose();
@@ -88,7 +102,8 @@ const Header: FC = memo(() => {
                   }}
                   key={route.id}
                 >
-                  {route.label}
+                  <ListItemIcon>{iconList[index]}</ListItemIcon>
+                  <ListItemText>{route.label}</ListItemText>
                 </MenuItem>
               ))}
             </Menu>
