@@ -125,6 +125,7 @@ const Me = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
+    transition: all 300ms ease;
     &:hover {
       box-shadow: none;
     }

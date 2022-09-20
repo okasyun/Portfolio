@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import Typography from "@mui/material/Typography";
 
-import "../../assets/home.css";
 import Header from "../template/Header";
 
 const Home: FC = () => {
@@ -10,7 +9,7 @@ const Home: FC = () => {
       {/* title-containerが横幅いっぱいにならない */}
       <Header />
       <div className="area">
-        <div className="home__container container">
+        <div className="home__container">
           <Typography mb={1} variant="h4">
             Hello I'm
           </Typography>
