@@ -14,7 +14,7 @@ import {
 
 import Header from "../template/Header";
 import Footer from "../template/Footer";
-// import me from "../../assets/img/me.jpeg";
+import me from "../../assets/img/me.jpeg";
 
 const About: FC = memo(() => {
   const navigate = useNavigate();
@@ -26,7 +26,9 @@ const About: FC = memo(() => {
           About Me
         </Typography>
         <Card>
-          <Me>{/* <img src={me} alt="me" /> */}</Me>
+          <Me>
+            <img src={me} alt="me" />
+          </Me>
           <Introduction>
             <p>
               webエンジニア。特にフロントエンド開発が得意です。このポートフォリオでは私のスキルと作品などを公開しています。
