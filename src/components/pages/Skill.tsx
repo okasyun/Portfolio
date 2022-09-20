@@ -6,10 +6,11 @@ import { skills } from "../../data";
 import { Box } from "@mui/system";
 
 import Header from "../template/Header";
+import Footer from "../template/Footer";
 
 const Skill: FC = () => {
   return (
-    <>
+    <Wrapper>
       <Header />
       <Container>
         <Typography my={3} variant="h4" align="center">
@@ -24,9 +25,15 @@ const Skill: FC = () => {
           ))}
         </SkillsList>
       </Container>
-    </>
+      <Footer />
+    </Wrapper>
   );
 };
+const Wrapper = styled.div`
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 140px;
+`;
 
 const Container = styled.div`
   width: 100%;

@@ -14,7 +14,7 @@ import {
 
 import Header from "../template/Header";
 import Footer from "../template/Footer";
-import me from "../../assets/img/me.jpeg";
+import me from "/Users/shunokamoto/Documents/programming/JavaScript/portfolio/src/assets/img/me.jpeg";
 
 const About: FC = memo(() => {
   const navigate = useNavigate();
@@ -83,10 +83,11 @@ const About: FC = memo(() => {
   );
 });
 
+// padding-bottom: footerのサイズ
 const Wrapper = styled.div`
   position: relative;
   min-height: 100vh;
-  padding-bottom: 100px;
+  padding-bottom: 140px;
 `;
 const Container = styled.div`
   width: 100%;

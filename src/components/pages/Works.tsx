@@ -4,6 +4,7 @@ import WorksCard from "../organism/WorksCard";
 import { Typography } from "@mui/material";
 
 import Header from "../template/Header";
+import Footer from "../template/Footer";
 import { works } from "../../data";
 
 const Works: FC = memo(() => {
@@ -28,11 +29,13 @@ const Works: FC = memo(() => {
           ))}
         </WorksList>
       </Container>
+      <Footer />
     </Wrapper>
   );
 });
 
 const Wrapper = styled.div`
+  padding-bottom: 140px;
   position: relative;
   min-height: 100vh;
 `;

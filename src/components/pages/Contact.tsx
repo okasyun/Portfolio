@@ -8,6 +8,7 @@ import { Box } from "@mui/system";
 import { useForm, Controller, SubmitHandler } from "react-hook-form";
 
 import Header from "../template/Header";
+import Footer from "../template/Footer";
 
 // 環境変数のセッティング
 // デザインの修正
@@ -140,6 +141,7 @@ const Contact: FC = memo(() => {
           )}
         </Box>
       </Container>
+      <Footer />
     </Wrapper>
   );
 });
@@ -147,6 +149,7 @@ const Contact: FC = memo(() => {
 const Wrapper = styled.div`
   position: relative;
   min-height: 100vh;
+  padding-bottom: 140px;
 `;
 const Container = styled.div`
   width: 100%;

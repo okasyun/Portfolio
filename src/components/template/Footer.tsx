@@ -34,12 +34,11 @@ const Footer = () => {
 };
 
 const StyledFooter = styled.div`
-  padding-top: 100px;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 100px;
-  margin: 0 auto;
+  margin: 20px 0;
 `;
 
 const StyledDiv = styled.div`
