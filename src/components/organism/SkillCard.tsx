@@ -1,12 +1,11 @@
 import React, { FC } from "react";
+import styled from "styled-components";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
-import { Divider } from "@mui/material";
-import { Box } from "@mui/system";
-
 import Rating from "@mui/material/Rating";
-import styled from "styled-components";
+import Divider from "@mui/material/Divider";
+import Typography from "@mui/material/Typography";
+import { Box } from "@mui/system";
 
 type Props = {
   title: string;

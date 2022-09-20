@@ -1,11 +1,11 @@
 import React, { memo, FC } from "react";
 import styled from "styled-components";
-import WorksCard from "../organism/WorksCard";
-import { Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
 
+import WorksCard from "../organism/WorksCard";
 import Header from "../template/Header";
 import Footer from "../template/Footer";
-import { works } from "../../data";
+import { works } from "../../Data/work";
 
 const Works: FC = memo(() => {
   return (

@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import { Typography } from "@mui/material";
-import SkillCard from "../organism/SkillCard";
-import { skills } from "../../data";
+import Typography from "@mui/material/Typography";
 import { Box } from "@mui/system";
 
+import { skills } from "../../Data/skill";
+import SkillCard from "../organism/SkillCard";
 import Header from "../template/Header";
 import Footer from "../template/Footer";
 

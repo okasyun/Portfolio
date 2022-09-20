@@ -1,9 +1,12 @@
 import React, { memo, FC } from "react";
+import Header from "../template/Header";
+import Footer from "../template/Footer";
 
 const Page404: FC = memo(() => {
   return (
     <>
-      <h1>404ページです</h1>
+      <Header />
+      <Footer />
     </>
   );
 });

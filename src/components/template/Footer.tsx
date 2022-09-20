@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { IconButton, Typography } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";

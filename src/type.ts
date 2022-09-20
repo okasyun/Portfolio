@@ -1,12 +1,12 @@
 export type Routes = {
-  id: number;
+  readonly id: number;
   path: string;
   label: string;
   active: boolean;
 };
 
 export type Work = {
-  id: number;
+  readonly id: number;
   image: string;
   title: string;
   cardDescription: string;
@@ -16,7 +16,7 @@ export type Work = {
 };
 
 export type Skill = {
-  id: number;
+  readonly id: number;
   title: string;
   items: { name: string; image: string; rating: number }[];
 };

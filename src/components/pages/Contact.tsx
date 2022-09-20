@@ -1,18 +1,15 @@
 import React, { memo, FC } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
+import Alert from "@mui/material/Alert";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-import { Alert, Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
 import { Box } from "@mui/system";
 import { useForm, Controller, SubmitHandler } from "react-hook-form";
 
 import Header from "../template/Header";
 import Footer from "../template/Footer";
-
-// 環境変数のセッティング
-// デザインの修正
-// 送信完了メッセージ
 
 const userID = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
