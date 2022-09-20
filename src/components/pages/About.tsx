@@ -14,7 +14,7 @@ import {
 
 import Header from "../template/Header";
 import Footer from "../template/Footer";
-import me from "/Users/shunokamoto/Documents/programming/JavaScript/portfolio/src/assets/img/me.jpeg";
+import me from "../../assets/img/me.jpeg";
 
 const About: FC = memo(() => {
   const navigate = useNavigate();
