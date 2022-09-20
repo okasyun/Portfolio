@@ -1,9 +1,9 @@
 import React, { memo, FC } from "react";
-import Header from "../template/Header";
-import Typography from "@mui/material/Typography";
+
 import styled from "styled-components";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 import { useNavigate } from "react-router-dom";
-import { Button } from "@mui/material";
 import { FiMapPin } from "react-icons/fi";
 import {
   AiOutlineMail,
@@ -11,23 +11,25 @@ import {
   AiFillTwitterSquare,
   AiOutlineLink,
 } from "react-icons/ai";
-import {} from "react-icons/ai";
 
+import Header from "../template/Header";
+import Footer from "../template/Footer";
 import me from "../../assets/img/me.jpeg";
+
 const About: FC = memo(() => {
   const navigate = useNavigate();
   return (
-    <>
+    <Wrapper>
       <Header />
       <Container>
         <Typography my={3} variant="h4" align="center">
           About Me
         </Typography>
-        <div className="cards">
-          <div className="me">
+        <Card>
+          <Me>
             <img src={me} alt="me" />
-          </div>
-          <div className="introduction">
+          </Me>
+          <Introduction>
             <p>
               webエンジニア。特にフロントエンド開発が得意です。このポートフォリオでは私のスキルと作品などを公開しています。
             </p>
@@ -36,36 +38,36 @@ const About: FC = memo(() => {
               coding. This portfolio site lists my skills, my background, and my
               productions.
             </p> */}
-            <div className="icons__list">
+            <IconsList>
               <div>
                 <FiMapPin />
-                <p className="il">Tokyo</p>
+                <IconDescription>Tokyo</IconDescription>
               </div>
-              <div className="icon">
+              <Icon>
                 <a href="mailto:okashun0326@gmail.com">
                   <AiOutlineMail />
-                  <span className="il">okashun0326@gmail.com</span>
+                  <IconDescription>okashun0326@gmail.com</IconDescription>
                 </a>
-              </div>
-              <div className="icon">
+              </Icon>
+              <Icon>
                 <a href="https://github.com/okasyun">
                   <AiFillGithub />
-                  <span className="il">Github</span>
+                  <IconDescription>Github</IconDescription>
                 </a>
-              </div>
-              <div className="icon">
+              </Icon>
+              <Icon>
                 <a href="https://twitter.com/takoyakimayonai">
                   <AiFillTwitterSquare />
-                  <span className="il">Twitter</span>
+                  <IconDescription>Twitter</IconDescription>
                 </a>
-              </div>
-              <div className="icon">
+              </Icon>
+              <Icon>
                 <a href="https://qiita.com/gensokyo0326">
                   <AiOutlineLink />
-                  <span className="il">Qiita</span>
+                  <IconDescription>Qiita</IconDescription>
                 </a>
-              </div>
-            </div>
+              </Icon>
+            </IconsList>
             <Button
               size="large"
               variant="contained"
@@ -73,20 +75,95 @@ const About: FC = memo(() => {
             >
               Let's talk
             </Button>
-          </div>
-        </div>
+          </Introduction>
+        </Card>
       </Container>
-    </>
+      <Footer />
+    </Wrapper>
   );
 });
 
+const Wrapper = styled.div`
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 100px;
+`;
 const Container = styled.div`
-  height: 100vh;
   width: 100%;
   padding-top: 64px;
-  margin: 0 auto;
   position: relative;
   background-color: white;
+`;
+
+const Card = styled.div`
+  padding-bottom: 20px;
+  gap: 4rem;
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  @media screen and (max-width: 1000px) {
+    gap: 2rem;
+    flex-direction: column;
+  }
+`;
+
+const Me = styled.div`
+  width: 20rem;
+  height: 23rem;
+  position: relative;
+  & > img {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 3rem;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: 50% 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+`;
+
+const Introduction = styled.div`
+  max-width: 30rem;
+  position: relative;
+  & > p {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    @media screen and (max-width: 1000px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+`;
+
+const IconsList = styled.div`
+  flex-direction: column;
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 25px;
+`;
+
+const Icon = styled.div`
+  transition: all 400ms ease;
+  &:hover {
+    color: rgba(0, 0, 0, 0.2);
+  }
+}
+`;
+
+const IconDescription = styled.div`
+  margin-left: 3px;
+  display: inline-block;
+  letter-spacing: 0.2rem;
 `;
 
 export default About;
