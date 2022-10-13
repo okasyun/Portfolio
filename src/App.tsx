@@ -5,11 +5,9 @@ import Router from "./router/Router";
 import "./assets/reset.css";
 import "./assets/styled.css";
 
-// フォント
-// ボタンのデザイン
-// cardhover時のアクション
-// memo化によるパフォーマンス
-// netlifyurlエラー
+// メモ化によるパフォーマンス
+//  全体的デザイン
+// Contactデザイン改良
 
 function App() {
   return (

@@ -32,9 +32,9 @@ export const works: Work[] = [
     id: 1,
     image: pyxel,
     title: "ブロック崩しゲーム",
-    cardDescription: "ファッションのECサイトを作りました",
+    cardDescription: "時間が経つとボールが増えるブロック崩しゲーム",
     dialogDescription:
-      "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しましたYoutubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しましたYoutubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しましたYoutubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しましたYoutubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
+      "大学の授業でPythonを使ってブロック崩しゲームを作成しました。時間が経つとボールが増える仕組みを作り、。",
     tools: ["Python"],
     link: {
       demoBoolean: false,
@@ -46,9 +46,9 @@ export const works: Work[] = [
     id: 2,
     image: nobutyping,
     title: "ノブのタイピングゲーム",
-    cardDescription: "ファッションのECサイトを作りました",
+    cardDescription: "ノブの名ツッコミでタイピングゲームができます",
     dialogDescription:
-      "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
+      "千鳥ノブの名ツッコミ30個くらいでタイピングゲームができます。難易度は「簡単」「普通」「クセすご」から選べて、文字数が変わります。普通のタイピングゲームは問題がつまらないので楽しく練習できるように作りました。",
     tools: ["HTML&CSS", "Javascript"],
     link: {
       demoBoolean: true,
@@ -60,9 +60,9 @@ export const works: Work[] = [
     id: 3,
     image: photoportfolio,
     title: "写真のポートフォリオ",
-    cardDescription: "ファッションのECサイトを作りました",
+    cardDescription: "自分が撮影してきた写真のポートフォリオ",
     dialogDescription:
-      "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
+      "趣味が写真なので撮影してきた写真をポートフォリオとしてまとめました。CSSとJavaScriptで時間経過とともに写真が移り変わるアニメーションなどを工夫しました。",
     tools: ["HTML&CSS", "JavaScript", "Jquery"],
     link: {
       demoBoolean: true,
@@ -74,9 +74,8 @@ export const works: Work[] = [
     id: 4,
     image: me,
     title: "ポートフォリオ",
-    cardDescription: "ファッションのECサイトを作りました",
-    dialogDescription:
-      "Youtubeの動画を参考にしてファッションのECサイトを作りました。初めてReact-reduxを使用しました",
+    cardDescription: "このポートフォリオ",
+    dialogDescription: "初めてMUIを使いました。",
     tools: ["HTML&CSS", "Typescript", "React", "MUI"],
     link: {
       demoBoolean: true,
