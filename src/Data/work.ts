@@ -101,14 +101,28 @@ export const works: Work[] = [
     id: 5,
     image: me,
     title: "チャットアプリ",
-    cardDescription: "認証機能",
+    cardDescription: "認証機能を持ったチャットアプリ",
     dialogDescription:
       "認証機能を持ったチャットアプリを作りました。アカウント登録とログインができてない場合はログインページとアカウント登録ページに遷移する点を工夫しました。",
     tools: ["Typescript", "React", "MUI", "Firebase"],
     link: {
       demoBoolean: true,
-      sourceCode: "https://github.com/okasyun/ReactTypeScript_TodoApp",
-      demoSite: "https://okasyun.github.io/ReactTypeScript_TodoApp/",
+      sourceCode: "https://github.com/okasyun/messageApp",
+      demoSite: "https://authmessage.netlify.app/",
+    },
+  },
+  {
+    id: 5,
+    image: me,
+    title: "Netflixクローン",
+    cardDescription: "TMDBデータベースAPIを使ったNetflixクローン",
+    dialogDescription:
+      "TMDBという映画情報が管理されているデータベースをAPIで引っ張ってきてNetflix風に表示しました。Youtubeの動画広告がある場合はクリックすると表示されます。参考:https://zenn.dev/gunners6518/books/4c4672f32dd100",
+    tools: ["Typescript", "React"],
+    link: {
+      demoBoolean: true,
+      sourceCode: "https://github.com/okasyun/Netflixclone",
+      demoSite: "https://okasyun.github.io/Netflixclone/",
     },
   },
 ];
