@@ -34,7 +34,7 @@ export const works: Work[] = [
     title: "ブロック崩しゲーム",
     cardDescription: "時間が経つとボールが増えるブロック崩しゲーム",
     dialogDescription:
-      "大学の授業でPythonを使ってブロック崩しゲームを作成しました。時間が経つとボールが増える仕組みを作り、。",
+      "大学の授業でPythonを使ってブロック崩しゲームを作成しました。時間が経つとボールが増える仕組みを作りました。",
     tools: ["Python"],
     link: {
       demoBoolean: false,
@@ -81,6 +81,34 @@ export const works: Work[] = [
       demoBoolean: true,
       sourceCode: "https://github.com/okasyun/Portfolio",
       demoSite: "https://okasyun.netlify.app",
+    },
+  },
+  {
+    id: 5,
+    image: me,
+    title: "Todoアプリ",
+    cardDescription: "PWAで利用できるTodoアプリ",
+    dialogDescription:
+      "スマホアプリとしても使用できるTodoアプリを作成しました。参考:https://zenn.dev/sprout2000/articles/60cc8f1aa08b4b",
+    tools: ["Typescript", "React", "MUI"],
+    link: {
+      demoBoolean: true,
+      sourceCode: "https://github.com/okasyun/ReactTypeScript_TodoApp",
+      demoSite: "https://okasyun.github.io/ReactTypeScript_TodoApp/",
+    },
+  },
+  {
+    id: 5,
+    image: me,
+    title: "チャットアプリ",
+    cardDescription: "認証機能",
+    dialogDescription:
+      "認証機能を持ったチャットアプリを作りました。アカウント登録とログインができてない場合はログインページとアカウント登録ページに遷移する点を工夫しました。",
+    tools: ["Typescript", "React", "MUI", "Firebase"],
+    link: {
+      demoBoolean: true,
+      sourceCode: "https://github.com/okasyun/ReactTypeScript_TodoApp",
+      demoSite: "https://okasyun.github.io/ReactTypeScript_TodoApp/",
     },
   },
 ];
