@@ -3,6 +3,9 @@ import me from "../assets/img/me.jpeg";
 import pyxel from "../assets/img/pyxel.png";
 import nobutyping from "../assets/img/nobutyping.png";
 import photoportfolio from "../assets/img/photoportfolio.png";
+import chat from "../assets/img/chat.png";
+import netflix from "../assets/img/netflix.png";
+import todoapp from "../assets/img/todoapp.png";
 
 import { Work } from "../type";
 
@@ -85,7 +88,7 @@ export const works: Work[] = [
   },
   {
     id: 5,
-    image: me,
+    image: todoapp,
     title: "Todoアプリ",
     cardDescription: "PWAで利用できるTodoアプリ",
     dialogDescription:
@@ -99,7 +102,7 @@ export const works: Work[] = [
   },
   {
     id: 5,
-    image: me,
+    image: chat,
     title: "チャットアプリ",
     cardDescription: "認証機能を持ったチャットアプリ",
     dialogDescription:
@@ -113,7 +116,7 @@ export const works: Work[] = [
   },
   {
     id: 5,
-    image: me,
+    image: netflix,
     title: "Netflixクローン",
     cardDescription: "TMDBデータベースAPIを使ったNetflixクローン",
     dialogDescription:
